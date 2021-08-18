@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="easylife.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1><i>Easy Life</i></h1>
+        <div class="container">
+            <form id="From1">
+                <h2>WELCOME!</h2>
+                <p>Log in<strong> Easy Life </strong></p>
+                <div class="btn-box">
+                    <button type="button" id="Next1">LOG IN</button>
+                </div>
+                <p>If you have not any account let's make a new account.</p>
+                <div class="btn-box">
+                    <button type="button" id="Next2">Click here</button>
+                </div>
+            </form>
+            <form id="From2">
+                <h3>Sign Up</h3>
+                <p>It is quick and easy!</p>
+                <input type="name" placeholder="First name">
+                <input type="name" placeholder="Surename">
+                <div class="gender">
+                    your gender:
+                    <select name="age" id="age">
+                        <option value="age">select your gender</option>
+                        <option value="age">Male</option>
+                        <option value="age">Female</option>
+                        <option value="age">Custom</option>
+                    </select>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="Back1">Back</button>
+                    <button type="button" id="Next3">Next</button>
+                </div>
+            </form>
+            <form id="From3">
+                <p>Personal Information</p>
+                <input type="gmail" placeholder="Enter Your Gmail">
+                <input type="text" placeholder="Enter your Mobile Number">
+                <input type="Password" placeholder="Create a Password">
+                <input type="password" placeholder="Confirm Password">
+                <div class="btn-box">
+                    <button type="button" id="Back2">Back</button>
+                    <button type="button" id="Next4">Submit</button>
+                </div>
+            </form>
+            <form id="From4">
+                <h2>Congratulations!</h2>
+                <p>You have done all formalities.After justifying all we will
+                    inform you later.Thanks for believeing <strong>Easy Life</strong> and staying with us.</p>
+            </form>
+            <form id="From5">
+                <p>Login Form!</p>
+                <input type="text" placeholder="Enter Your Gmail or Mobile Number">
+                <input type="password" placeholder="Enter your Password">
+                <div class="btn-box"><button>Submit</button></div>
+            </form>
+        </div>
+        <script>
+            var Form1 = document.getElementById("From1");
+            var Form2 = document.getElementById("From2");
+            var Form3 = document.getElementById("From3");
+            var Form4 = document.getElementById("From4");
+            var Form5 = document.getElementById("From5");
+
+            var Next1 = document.getElementById("Next1");
+            var Next2 = document.getElementById("Next2");
+            var Next3 = document.getElementById("Next3");
+            var Next4 = document.getElementById("Next4");
+            var Back1 = document.getElementById("Back1");
+            var Back2 = document.getElementById("Back2");
+
+
+           Next1.onclick =function(){
+              From1.style.left ="-550px";
+               From5.style.left ="0px";
+            }
+           Next2.onclick =function(){
+               From1.style.left ="-550px";
+               From2.style.left ="0px";
+           }
+           Next3.onclick =function(){
+               From2.style.left ="-550px";
+               From3.style.left ="0px";
+           }
+           Next4.onclick =function(){
+               From3.style.left ="-550px";
+               From4.style.left ="0px";
+           } 
+          Back1.onclick =function(){
+               From1.style.left ="0px";
+               From2.style.left ="550px";
+           }
+           Back2.onclick =function(){
+               From2.style.left ="0px";
+               From3.style.left ="550px";
+           }
+
+        </script>
+    </body>
+
+</html>
